@@ -37,7 +37,16 @@ SRCS = src/ft_atoi.c \
 	   src/ft_isdigit.c \
 	   src/ft_memset.c \
 	   src/ft_strdup.c \
-	   src/ft_strncmp.c
+	   src/ft_strncmp.c \
+	   src/ft_lstadd_back.c	\
+	   src/ft_lstdelone.c \
+	   src/ft_lstmap.c \
+	   src/ft_lstadd_front.c \
+	   src/ft_lstiter.c	\
+	   src/ft_lstnew.c \
+	   src/ft_lstclear.c \
+	   src/ft_lstlast.c \
+	   src/ft_lstsize.c
 OBJS = $(SRCS:.c=.o)
 
 .PHONY: all clean fclean re
