@@ -6,16 +6,16 @@
 /*   By: bohlee <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/24 15:18:42 by bohlee            #+#    #+#             */
-/*   Updated: 2023/03/24 17:09:39 by bohlee           ###   ########.fr       */
+/*   Updated: 2024/04/22 11:35:09 by bohlee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_lstsize(t_list *lst)
+size_t	ft_lstsize(t_list *lst)
 {
 	t_list	*tail;
-	int		size;
+	size_t	size;
 
 	size = 0;
 	if (lst == 0)
