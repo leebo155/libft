@@ -11,9 +11,9 @@
 ## Funtions
 | Name | Return | Parameters | Description |
 | ---- | ------ | ---------- | ----------- |
-| [ft_atoi](https://github.com/leebo155/libft/blob/main/src/ft_atoi.c) | int | const char *str: The string to convert. | Returns the value of the conversion of 'str' to int. |
-| [ft_bzero](https://github.com/leebo155/libft/blob/main/src/ft_bzero.c) | void | void *s: The string to write.<br><br>size_t n: The length of 's' to write. | Writes 'n' zeroed bytes to 's'. If 'n' is zero, bzero() does nothing. |
-| [ft_calloc](https://github.com/leebo155/libft/blob/main/src/ft_calloc.c) | void | size_t count: Number of times to allocate by 'size'.<br><br>size_t size: Memory size to allocate. | Allocates enough space for 'count' objects that are 'size' bytes of memory each and returns a pointer to the allocated memory. The allocated memory is filled with bytes of value zero. |
+| [ft_atoi](https://github.com/leebo155/libft/blob/main/src/ft_atoi.c) | int | const char *str: The string to convert to int. | Returns the value of the conversion of 'str' to int. |
+| [ft_bzero](https://github.com/leebo155/libft/blob/main/src/ft_bzero.c) | void | void *s: The memory area to be written.<br><br>size_t n: The length of 's' to be written. | Writes 'n' zeroed bytes to 's'. If 'n' is zero, bzero() does nothing. |
+| [ft_calloc](https://github.com/leebo155/libft/blob/main/src/ft_calloc.c) | void | size_t count: The number of times to allocate by 'size'.<br><br>size_t size: The size of memory to allocate. | Allocates enough space for 'count' objects that are 'size' bytes of memory each and returns a pointer to the allocated memory. The allocated memory is filled with bytes of value zero. |
 | [ft_isalnum](https://github.com/leebo155/libft/blob/main/src/ft_isalnum.c) | int | int c: The integer to convert to unsigned char to check. | The test is to check for numbers and alphabets. Returns zero if 'c' tests false and returns non-zero if 'c' tests true. |
 | [ft_isalpha](https://github.com/leebo155/libft/blob/main/src/ft_isalpha.c) | int | int c: The integer to convert to unsigned char to check. | The test is to check for alphabets. Returns zero if 'c' tests false and returns non-zero if 'c' tests true. |
 | [ft_isascii](https://github.com/leebo155/libft/blob/main/src/ft_isascii.c) | int | int c: The integer to convert to unsigned char to check. | The test on which is between 0 and 127 inclusive. Returns zero if 'c' tests false and returns non-zero if 'c' tests true. |
