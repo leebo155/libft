@@ -15,10 +15,10 @@
 | ft_bzero | void | void *s: The string to write.<br><br>size_t n: The length of 's' to write. | Writes 'n' zeroed bytes to 's'. If 'n' is zero, bzero() does nothing. |
 | ft_calloc | void | size_t count: Number of times to allocate by 'size'.<br><br>size_t size: Memory size to allocate. | Allocates enough space for 'count' objects that are 'size' bytes of memory each and returns a pointer to the allocated memory. The allocated memory is filled with bytes of value zero. |
 | ft_isalnum | int | int c: The integer to convert to unsigned char to check. | The character test is to check for numbers and alphabets. Returns zero if the character tests false and returns non-zero if the character tests true. |
-| ft_isalpha | int | int c: The integer to convert to unsigned char to check. |  |
-| ft_isascii | int | int c: The integer to convert to unsigned char to check. |  |
-| ft_isdigit | int | int c: The integer to convert to unsigned char to check. |  |
-| ft_isprint | int | int c: The integer to convert to unsigned char to check. |  |
+| ft_isalpha | int | int c: The integer to convert to unsigned char to check. | The character test is to check for alphabets. Returns zero if the character tests false and returns non-zero if the character tests true. |
+| ft_isascii | int | int c: The integer to convert to unsigned char to check. | The character test on which is between 0 and 127 inclusive. Returns zero if the character tests false and returns non-zero if the character tests true. |
+| ft_isdigit | int | int c: The integer to convert to unsigned char to check. | The character test is to check for numbers. Returns zero if the character tests false and returns non-zero if the character tests true. |
+| ft_isprint | int | int c: The integer to convert to unsigned char to check. | The character test is to check for any printing character(between 32 and 126). Returns zero if the character tests false and returns non-zero if the character tests true. |
 | ft_memchr | void * | const void *s:<br><br>int c:<br><br>size_t n: |  |
 | ft_memcmp | int | const void *s1:<br><br>const void *s2:<br><br>size_t n: |  |
 | ft_memcpy | void * | void *dst:<br><br>const void *src:<br><br>size_t len: |  |
@@ -35,8 +35,8 @@
 | ft_strrchr | char * | const char *s:<br><br>int c |  |
 | ft_strtrim | char * | char const *s1: The string to be trimmed.<br><br>char const *set: The reference set of characters to trim. | Allocates with malloc and returns a copy of ’s1’ with the characters specified in ’set’ removed from the beginning and the end of the string. |
 | ft_substr | char * | char const s*: The string from which to create the substring.<br><br>unsigned int start: The start index of the substring in the string ’s’.<br><br>size_t len: The maximum length of the substring. | Allocates with malloc and returns a substring from the string ’s’. The substring begins at index ’start’ and is of maximum size ’len’. |
-| ft_tolower | int | int c: |  |
-| ft_toupper | int | int c: |  |
+| ft_tolower | int | int c: The upper-case letter to convert to corresponding lower-case letter. | If 'c' is an upper-case letter, returns the corresponding lower-case. otherwise, 'c' is returned unchanged. |
+| ft_toupper | int | int c: The lower-case letter to convert to corresponding upper-case letter. | If 'c' is an lower-case letter, returns the corresponding upper-case. otherwise, 'c' is returned unchanged. |
 | ft_split | char ** | char const *s: The string to be split.<br><br>char c: The delimiter character. | Allocates with malloc and returns an array of strings obtained by splitting ’s’ using the character ’c’ as a delimiter. The array must end with a NULL pointer. |
 | ft_itoa | char * | int n: the integer to convert. | Allocates with malloc and returns a string representing the integer received as an argument. Negative numbers must be handled. |
 | ft_strmapi | char * | char const *s: The string on which to iterate.<br><br>char (*f)(unsigned int, char): The function to apply to each character. | Applies the function ’f’ to each character of the string ’s’, and passing its index as first argument to create a new string with malloc resulting from successive applications of ’f’. |
