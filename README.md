@@ -14,25 +14,25 @@
 | ft_atoi | int | const char *str: The string to convert. | Returns the value of the conversion of 'str' to int. |
 | ft_bzero | void | void *s: The string to write.<br><br>size_t n: The length of 's' to write. | Writes 'n' zeroed bytes to 's'. If 'n' is zero, bzero() does nothing. |
 | ft_calloc | void | size_t count: Number of times to allocate by 'size'.<br><br>size_t size: Memory size to allocate. | Allocates enough space for 'count' objects that are 'size' bytes of memory each and returns a pointer to the allocated memory. The allocated memory is filled with bytes of value zero. |
-| ft_isalnum | int | int c: The integer to convert to unsigned char to check. | The character test is to check for numbers and alphabets. Returns zero if the character tests false and returns non-zero if the character tests true. |
-| ft_isalpha | int | int c: The integer to convert to unsigned char to check. | The character test is to check for alphabets. Returns zero if the character tests false and returns non-zero if the character tests true. |
-| ft_isascii | int | int c: The integer to convert to unsigned char to check. | The character test on which is between 0 and 127 inclusive. Returns zero if the character tests false and returns non-zero if the character tests true. |
-| ft_isdigit | int | int c: The integer to convert to unsigned char to check. | The character test is to check for numbers. Returns zero if the character tests false and returns non-zero if the character tests true. |
-| ft_isprint | int | int c: The integer to convert to unsigned char to check. | The character test is to check for any printing character(between 32 and 126). Returns zero if the character tests false and returns non-zero if the character tests true. |
-| ft_memchr | void * | const void *s:<br><br>int c:<br><br>size_t n: |  |
-| ft_memcmp | int | const void *s1:<br><br>const void *s2:<br><br>size_t n: |  |
-| ft_memcpy | void * | void *dst:<br><br>const void *src:<br><br>size_t len: |  |
-| ft_memmove | void * | void *dst:<br><br>const void *src:<br><br>size_t len: |  |
-| ft_memset | void * | void *b:<br><br>int c:<br><br>size_t len: |  |
-| ft_strchr | char * | const char *s:<br><br>int c: |  |
-| ft_strdup | char * | const char *s1: |  |
+| ft_isalnum | int | int c: The integer to convert to unsigned char to check. | The test is to check for numbers and alphabets. Returns zero if 'c' tests false and returns non-zero if 'c' tests true. |
+| ft_isalpha | int | int c: The integer to convert to unsigned char to check. | The test is to check for alphabets. Returns zero if 'c' tests false and returns non-zero if 'c' tests true. |
+| ft_isascii | int | int c: The integer to convert to unsigned char to check. | The test on which is between 0 and 127 inclusive. Returns zero if 'c' tests false and returns non-zero if 'c' tests true. |
+| ft_isdigit | int | int c: The integer to convert to unsigned char to check. | The test is to check for numbers. Returns zero if 'c' tests false and returns non-zero if 'c' tests true. |
+| ft_isprint | int | int c: The integer to convert to unsigned char to check. | The test is to check for any printing character(between 32 and 126). Returns zero if 'c' tests false and returns non-zero if 'c' tests true. |
+| ft_memchr | void * | const void *s: The memory area to find 'c'.<br><br>int c: The int to find in 's'.<br><br>size_t n: The length of memory to check | Returns 's' pointer to the first occurrence of 'c', or NULL if 'c' does not appear in 's'. |
+| ft_memcmp | int | const void *s1: The memory area to compare 's2'.<br><br>const void *s2: The memory area to compare 's1'.<br><br>size_t n: The length of 'dst' to check. | Compares's1' against 's2'. Both areas are assumed to be 'n' bytes long. Returns zero if the two areas are identical, otherwise returns the difference between the first two differing bytes. |
+| ft_memcpy | void * | void *dst: The memory area to be copied.<br><br>const void *src: The memory area to copy.<br><br>size_t len: The length of 'dst' to copy. | Copies 'n' bytes from 'src' to 'dst' and returns 'dst'. |
+| ft_memmove | void * | void *dst: The memory area to be copied.<br><br>const void *src: The memory area to copy.<br><br>size_t len: The length of 'dst' to copy. | Copies 'n' bytes from 'src' to 'dst' and returns 'dst'. Unlike 'memcpy', it follows a non-destructive copy format, and the copy order varies depending on the location of the memory address. |
+| ft_memset | void * | void *b: The string to be written.<br><br>int c: The character to write.<br><br>size_t len: The length of 'b' to be written. | Writes 'len' bytes of value 'c' to 'b' and returns 'b'. |
+| ft_strchr | char * | const char *s: The string to find 'c'.<br><br>int c: The character to find in 's'. | Returns 's' pointer to the first occurrence of 'c', or NULL if 'c' does not appear in 's'. |
+| ft_strrchr | char * | const char *s: The string to find 'c'.<br><br>int c: The character to find in 's'. | Returns 's' pointer to the last occurrence of 'c', or NULL if 'c' does not appear in 's'. |
+| ft_strdup | char * | const char *s1: The string to copy. | Allocates with malloc and returns a string copied from 's1'. |
 | ft_strjoin | char * | char const *s1: The prefix string.<br><br>char const *s2: The suffix string. | Allocates with malloc and returns a new string, which is the result of the concatenation of ’s1’ and ’s2’. |
 | ft_strlcat | size_t | char *dst:<br><br>const char *src:<br><br>size_t dstsize: |  |
 | ft_strlcpy | size_t | char *dst:<br><br>const char *src:<br><br>size_t dstsize: |  |
 | ft_strlen | size_t | const char *s |  |
 | ft_strncmp | int | const char *s1:<br><br>const char *s2:<br><br>size_t n: |  |
 | ft_strnstr | char * | const char *haystack:<br><br>const char *needle:<br><br>size_t len: |  |
-| ft_strrchr | char * | const char *s:<br><br>int c |  |
 | ft_strtrim | char * | char const *s1: The string to be trimmed.<br><br>char const *set: The reference set of characters to trim. | Allocates with malloc and returns a copy of ’s1’ with the characters specified in ’set’ removed from the beginning and the end of the string. |
 | ft_substr | char * | char const s*: The string from which to create the substring.<br><br>unsigned int start: The start index of the substring in the string ’s’.<br><br>size_t len: The maximum length of the substring. | Allocates with malloc and returns a substring from the string ’s’. The substring begins at index ’start’ and is of maximum size ’len’. |
 | ft_tolower | int | int c: The upper-case letter to convert to corresponding lower-case letter. | If 'c' is an upper-case letter, returns the corresponding lower-case. otherwise, 'c' is returned unchanged. |
