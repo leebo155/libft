@@ -8,6 +8,14 @@
 * The only difference will be their names. They will begin with the ’ft_’ prefix. For instance, strlen becomes ft_strlen.
 * The libft also contains functions that are not included in libc.
 
+## Makefile
+| Rules | Description |
+| ----- | ----------- |
+| all | Compile a library libft.a. |
+| clean | Remove all the temporary generated files. |
+| fclean | Remove all the generated files. |
+| re | Remove all the generated files and compile a libft.a |
+
 ## Funtions
 | Name | Return | Parameters | Description |
 | ---- | ------ | ---------- | ----------- |
